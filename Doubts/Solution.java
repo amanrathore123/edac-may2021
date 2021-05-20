@@ -97,7 +97,7 @@ class DisplayMenu
     {
         Scanner s= new Scanner(System.in);
         int choice;
-        int counter,ch;
+        int counter=0,ch;
         char answer='Y';
         long deposit,withdrawal;
         Account Ac[]=new Account[5];
@@ -110,7 +110,7 @@ class DisplayMenu
         {counter++;}
         
         switch(choice){
-            case 1:  Account Ac[(counter-1)] = new Account();
+            case 1:  Account Ac[counter-1] = new Account();
                      Ac[counter-1].setName();
                      Ac[counter-1].setAccNo();
                      Ac[counter-1].setDob();
